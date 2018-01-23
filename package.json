@@ -1,0 +1,33 @@
+{
+    "name": "login-test",
+    "description": "Js based UI automation tests",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": "8.8.1",
+        "npm": "5.5.1"
+    },
+    "scripts": {
+        "test": "testcafe nightmare -q -e tests --assertion-timeout 10000",
+        "test-reporter": "testcafe nightmare -q -e tests --reporter xunit:TestResults.xml",
+        "test-chrome": "testcafe -q -e chrome tests",
+        "test-parallel": "testcafe -c 3 -q -e chrome tests",
+        "test-debug": "testcafe -d chrome tests",
+        "test-all-browsers": "testcafe all tests",
+        "test-mobile": "testcafe remote tests --qr-code"
+    },
+    "dependencies": {
+        "testcafe": "^0.18.1",
+        "testcafe-browser-provider-nightmare": "0.0.5",
+        "testcafe-reporter-xunit": "^2.1.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.0.1",
+        "eslint": "^4.11.0",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-loader": "^1.9.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-react": "^7.5.1"
+    }
+}
