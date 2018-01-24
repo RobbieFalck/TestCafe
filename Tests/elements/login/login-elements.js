@@ -2,9 +2,11 @@ import { Selector } from 'testcafe';
 
 export default class LoginElements {
     constructor() {
-        this.usernameInput = Selector('div.login-left > input');
-        this.passwordInput = Selector('div.login-right > input');
-        this.loginButton = Selector('div.login-button-container > button');
-        this.username = Selector('div.widget-item.header-account-widget > div.cf > div > h3');
+        this.loginMenuButton = Selector('.c-header__menu--login-link');
+        this.usernameInput = Selector('#id_username');
+        this.passwordInput = Selector('#id_password');
+        this.loginButton = Selector('.modal-footer > button');
+        this.errorMessage = Selector('#alerts > div:nth-child(2)');
+        this.errorMessageText = 'Incorrect username and / or password';
     }
 }

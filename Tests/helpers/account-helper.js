@@ -1,10 +1,9 @@
 module.exports = {
 
-    loginuser: {
-        username: 'bw_valid_user',
-        password: '123123',
-        country: 'United Kingdom',
-        firstName: 'Valid',
-        surname: 'User',
+    logininvaliduser: {
+        username: 'test@gmail.com',
+        password: '1234',
+        firstName: 'Test',
+        surname: 'InvalidUser',
     },
 };
