@@ -17,3 +17,7 @@ test('Player is able to see an error message when logging in with invalid creden
     await login.actions.clickLoginButton(t);
     await login.actions.checkErrorMessageIsPresent(t);
 });
+
+test('JustPark ping comes back as 200', async t => {
+    await login.actions.pingJustPark(t);
+});
